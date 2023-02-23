@@ -1,0 +1,61 @@
+@mixin flex($dir, $wrap, $just, $align ){
+
+    display: flex;
+    flex-flow: $dir $wrap;
+    justify-content: $just;
+    align-items: $align;
+}
+
+
+@mixin section{
+
+    @media screen and (max-width: 1162px) {
+      @content;
+
+    }
+}
+
+@mixin media{
+
+    @media screen and (max-width: 989px){
+        @content;
+    }
+}
+
+@mixin cel{
+
+    @media screen and (max-width: 972px){
+        @content;
+    }
+}
+
+@mixin medium{
+
+    @media screen and (max-width: 926px){
+        @content;
+    }
+}
+
+@mixin minimo{
+
+    @media screen and (max-width: 738px){
+        @content;
+    }
+}
+
+@mixin responsive{
+
+    @media screen and (max-width: 610px){
+        @content;
+    }
+}
+
+@mixin responsive-min{
+
+    @media screen and (max-width: 397px){
+        @content;
+    }
+}
+
+
+
