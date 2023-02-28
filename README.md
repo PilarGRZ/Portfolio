@@ -9,9 +9,9 @@ pilar gonzalez
 *[LinkedIn](https://www.linkedin.com/in/pilargrz/).
 
 
-##Ver ejemplo en vivo  https://pilargrz.netlify.app/
+##Ver ejemplo en vivo https://pilargrz.netlify.app/
 
 
 ##Contratación:
 
-Si quieres contratarme puedes escribirme a mariadelpilargr06@gmail.com .
+Si quieres contratarme puedes escribirme a mariadelpilargr06@gmail.com
