@@ -9,7 +9,7 @@ pilar gonzalez
 *[LinkedIn](https://www.linkedin.com/in/pilargrz/).
 
 
-##Ver ejemplo en vivo https://pilargrz.netlify.app
+##Ver ejemplo en vivo  https://pilargrz.netlify.app/
 
 
 ##Contratación:
