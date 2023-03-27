@@ -1,0 +1,569 @@
+@font-face {
+  font-family: "pink";
+  src: url(/Fonts/Handlee-Regular.ttf) format("woff2"), url(/Fonts/Handlee-Regular.ttf) format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "texto";
+  src: url(/Fonts/DMSans-Regular.ttf) format("woff2"), url(/Fonts/DMSans-Regular.ttf) format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  border: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: plum;
+  cursor: none;
+}
+@media screen and (max-width: 327px) {
+  body {
+    cursor: none;
+  }
+}
+
+#header {
+  width: 100%;
+  margin-top: -1em;
+  opacity: 1;
+  background: url(/Img/fondoaboutme2jpg.avif);
+  background-size: cover;
+  position: fixed;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 972px) {
+  #header {
+    position: fixed;
+  }
+}
+#header .button {
+  color: black;
+  display: none;
+  margin-left: 5em;
+}
+@media screen and (max-width: 972px) {
+  #header .button {
+    display: block;
+    margin-left: 2em;
+  }
+}
+#header .svg {
+  width: 1em;
+  height: 1em;
+  fill: black;
+}
+#header #nav {
+  width: 55%;
+  margin: 0px auto;
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 972px) {
+  #header #nav {
+    width: 100%;
+    opacity: 0;
+    height: 0vh;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  #header #nav.activo {
+    opacity: 2;
+    height: 25vh;
+  }
+}
+#header .logo {
+  width: 15em;
+  padding-left: 7em;
+}
+@media screen and (max-width: 972px) {
+  #header .logo {
+    width: 6em;
+  }
+}
+#header img {
+  width: 6em;
+  border-radius: 50%;
+  margin-top: 0.3em;
+  border: 1px solid pink;
+}
+@media screen and (max-width: 972px) {
+  #header img {
+    width: 5em;
+  }
+}
+#header li {
+  margin: 1.5em;
+}
+@media screen and (max-width: 989px) {
+  #header li {
+    margin: 1em;
+  }
+}
+@media screen and (max-width: 972px) {
+  #header li {
+    margin: 0.5em;
+  }
+}
+@media screen and (max-width: 327px) {
+  #header li {
+    margin: 0.2em;
+  }
+}
+#header ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 972px) {
+  #header ul {
+    flex-direction: column;
+  }
+}
+#header a {
+  font-family: "pink";
+  color: rgb(170, 71, 170);
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: all 300ms;
+  cursor: none;
+}
+@media screen and (max-width: 327px) {
+  #header a {
+    cursor: none;
+  }
+}
+#header a:hover {
+  color: purple;
+  text-decoration: underline;
+}
+
+#main {
+  margin: 1em 0;
+}
+#main .section {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 37em);
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1162px) {
+  #main .section {
+    display: grid;
+    grid-template-columns: repeat(2, 29em);
+  }
+}
+@media screen and (max-width: 926px) {
+  #main .section {
+    display: grid;
+    grid-template-columns: repeat(2, 23em);
+  }
+}
+@media screen and (max-width: 738px) {
+  #main .section {
+    display: flex;
+    gap: 2em;
+  }
+}
+@media screen and (max-width: 610px) {
+  #main .section {
+    min-height: 90vh;
+  }
+}
+#main #inicio {
+  background: url(/Img/fondoinicio26.webp);
+  padding-top: 1em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+@media screen and (max-width: 610px) {
+  #main #inicio {
+    display: block;
+    padding-top: 3em;
+  }
+}
+@media screen and (max-width: 738px) {
+  #main #inicio .titulo {
+    margin-top: 5em;
+  }
+}
+#main .imgi img {
+  width: 16em;
+  border-radius: 50%;
+  border: 4px solid rgb(240, 131, 240);
+}
+@media screen and (max-width: 972px) {
+  #main .imgi img {
+    width: 15em;
+  }
+}
+@media screen and (max-width: 738px) {
+  #main .imgi img {
+    width: 14em;
+    margin-top: 2em;
+  }
+}
+@media screen and (max-width: 327px) {
+  #main .imgi img {
+    margin-top: 4em;
+  }
+}
+#main #about {
+  width: 100%;
+  background: url(/Img/fondoaboutme.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 738px) {
+  #main #about {
+    display: block;
+  }
+}
+#main #about h2 {
+  margin-top: 0.2em;
+}
+#main .proyectos {
+  background: url(/Img/fondoheader1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 738px) {
+  #main .proyectos {
+    display: block;
+    margin-top: 1em;
+  }
+}
+#main .proyectos h2 {
+  margin-top: 0em;
+}
+@media screen and (max-width: 738px) {
+  #main .proyectos h2 {
+    margin-top: 1em;
+  }
+}
+@media screen and (max-width: 738px) {
+  #main .proyectos img {
+    margin-top: 2em;
+    width: 17em;
+  }
+}
+#main #contactos {
+  background: url(/Img/fondoaboutme.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 738px) {
+  #main #contactos {
+    display: block;
+  }
+}
+@media screen and (max-width: 738px) {
+  #main #contacto h2 {
+    padding-top: 3em;
+  }
+}
+#main .titulo,
+#main .formato {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#main span {
+  display: flex;
+  justify-content: center;
+  font-size: 0.8em;
+}
+#main .h2,
+#main span {
+  font-family: "pink";
+  font-size: 4em;
+  font-weight: bolder;
+  white-space: nowrap;
+  display: block;
+  color: rgb(170, 71, 170);
+  text-shadow: 1px 1px 2px black;
+}
+@media screen and (max-width: 972px) {
+  #main .h2,
+  #main span {
+    font-size: 3.4em;
+  }
+}
+@media screen and (max-width: 738px) {
+  #main .h2,
+  #main span {
+    padding-top: 0.2em;
+  }
+}
+@media screen and (max-width: 926px) {
+  #main .h2,
+  #main span {
+    font-size: 3.2em;
+  }
+}
+@media screen and (max-width: 397px) {
+  #main .h2,
+  #main span {
+    font-size: 2.5em;
+  }
+}
+
+.h3 {
+  font-family: "pink";
+  font-size: 2em;
+  color: rgb(255, 0, 255);
+  font-weight: bolder;
+  text-shadow: 1px 1px 2px rgb(170, 71, 170);
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 397px) {
+  .h3 {
+    font-size: 1.3em;
+    color: rgb(240, 97, 216);
+    text-shadow: 1px 1px 2px black;
+  }
+}
+
+.animation {
+  width: 10.8em;
+  margin: 0px auto;
+}
+
+.animation:before {
+  content: "";
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  height: 1.5em;
+  width: 8em;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%, 60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+.img img {
+  border: 5px solid rgb(170, 71, 170);
+  animation: blink 5s infinite linear;
+}
+
+@keyframes blink {
+  0% {
+    border: 5px solid rgb(240, 131, 240);
+  }
+  50% {
+    border: 5px solid rgb(170, 71, 170);
+  }
+  100% {
+    border: 5px solid rgba(89, 114, 250, 0.829);
+  }
+}
+#imagen {
+  text-align: center;
+}
+
+#imagen img {
+  width: 22em;
+}
+@media screen and (max-width: 926px) {
+  #imagen img {
+    width: 18em;
+  }
+}
+@media screen and (max-width: 738px) {
+  #imagen img {
+    width: 13em;
+    margin-top: 4.5em;
+  }
+}
+
+#imagen .pjt {
+  width: 24em;
+}
+
+.img img {
+  border-radius: 50%;
+}
+
+#imagen a {
+  text-decoration: none;
+}
+
+p {
+  text-align: center;
+  width: 80%;
+  margin: 0px auto;
+  font-family: "texto";
+  font-size: 1.1em;
+  padding-top: 1em;
+  color: black;
+}
+@media screen and (max-width: 926px) {
+  p {
+    font-size: 1em;
+  }
+}
+
+#descripcion .h3 {
+  margin-top: 0.5em;
+}
+
+#descripcion p {
+  margin-top: -1em;
+}
+
+#descripcion-citas {
+  text-align: center;
+}
+
+button {
+  background: url(/Img/fondoaboutme2jpg.avif);
+  color: rgb(170, 71, 170);
+  font-family: "pink";
+  font-size: 1.5em;
+  border: 1px solid rgb(255, 0, 255);
+  cursor: none;
+  border-radius: 5px;
+  margin-top: 0.5em;
+  font-weight: bolder;
+}
+
+#contacto,
+.redes {
+  height: 22em;
+  text-align: center;
+}
+
+.redes a {
+  cursor: none;
+  transition: all 300ms;
+}
+
+.me {
+  margin-top: -0.52em;
+  width: 100%;
+}
+
+.email {
+  margin-top: 3em;
+  text-align: center;
+  font-family: "texto";
+  font-size: 1.1em;
+}
+.email a {
+  color: rgb(255, 0, 255);
+  cursor: none;
+}
+.email a:hover {
+  color: rgba(89, 114, 250, 0.829);
+  transform: scale(1.12);
+}
+
+.sigue {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (max-width: 738px) {
+  .sigue {
+    padding-top: 2em;
+  }
+}
+.sigue i {
+  font-size: 3em;
+  margin: 1em;
+  border-radius: 50em;
+  transition: all 460ms;
+}
+.sigue i:hover {
+  color: rgba(89, 114, 250, 0.829);
+  transform: scale(1.12);
+}
+
+#footer {
+  width: 100%;
+  background: url(/Img/fondoaboutme2jpg.avif);
+  background-position: right;
+  background-size: cover;
+  min-height: 4em;
+  text-align: center;
+  font-family: "pink";
+  font-size: 1.2em;
+  line-height: 5em;
+}
+@media screen and (max-width: 926px) {
+  #footer {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 327px) {
+  #footer {
+    font-size: 0.8em;
+  }
+}
+
+#cursor {
+  width: 1em;
+  height: 1em;
+  background-color: rgb(136, 207, 30);
+  border: 2px solid rgb(0, 128, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  pointer-events: none;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+  box-shadow: 0 0 10px rgb(136, 207, 30), 0 0 40px rgb(136, 207, 30), 0 0 100px rgb(136, 207, 30);
+  animation: colors 5s infinite;
+}
+
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+#cursor:before {
+  content: "";
+  position: absolute;
+  background-color: rgb(136, 207, 30);
+  width: 2em;
+  height: 2em;
+  opacity: 0.2;
+  transform: translate(-25%, -25%);
+  border-radius: 50%;
+  border: 1px solid rgb(0, 128, 0);
+}
+
+#cursor.mini {
+  transform: scale(0.6);
+  transition: all 0.1s linear;
+}/*# sourceMappingURL=styles.css.map */
